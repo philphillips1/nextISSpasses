@@ -30,5 +30,6 @@ for i in response:
   risetime = i['risetime']
   begintime = lambda x:datetime.datetime.fromtimestamp(x).strftime('%Y-%m-%d %H:%M:%S')
   endtime = lambda x, y:datetime.datetime.fromtimestamp(x + y).strftime('%Y-%m-%d %H:%M:%S') 
+  passtime = lambda x: str(datetime.timedelta(seconds=x))
   print("Station pass starts at: {0} and ends at: {1}".format(begintime(risetime),endtime(risetime, duration)))
-
+  print("  Duration {0}".format(passtime(duration)))
