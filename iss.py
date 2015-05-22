@@ -10,7 +10,7 @@ lon = 2.259434
 # altitude is just BS
 alt = 100
 # how many future passes, further passes are less precise and can change
-passes = 2
+passes = 3
 baseurl = "http://api.open-notify.org/iss-pass.json"
 query = "lat=" + str(lat) + "&lon=" + str(lon) + "&alt=" + str(alt) + "&n=" + str(passes)
 
